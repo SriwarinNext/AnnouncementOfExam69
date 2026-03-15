@@ -32,7 +32,7 @@
         }
     </style>
 </head>
-<body class="flex items-center justify-center p-4">
+<body class="flex flex-col items-center justify-center p-4">
 
     <!-- Container หลัก -->
     <div class="glass-panel w-full max-w-md rounded-3xl p-8 relative overflow-hidden transition-all duration-500" id="mainContainer">
@@ -43,13 +43,12 @@
             <div class="text-center mb-6">
                 <img src="https://img2.pic.in.th/logo-SW.png" alt="logo SW" class="mx-auto h-24 object-contain drop-shadow-md">
                 <h1 class="text-2xl font-semibold text-blue-800 mt-4">ระบบประกาศผลสอบ</h1>
-                <p class="text-pink-600 font-medium">สายวิทยาศาสตร์-คณิตศาสตร์</p>
+                <p class="text-pink-600 font-medium">สายวิทย์-คณิต</p>
             </div>
 
             <!-- ฟอร์มกรอกข้อมูล -->
             <form id="checkForm" class="space-y-5">
                 <div class="text-center">
-                    <!-- ไอคอนบัตรประชาชน -->
                     <img src="https://img2.pic.in.th/icon-id-card.png" alt="icon id card" class="mx-auto h-16 mb-3 opacity-90">
                     
                     <label for="userId" class="block text-sm font-medium text-gray-700 mb-1 text-left">
@@ -79,7 +78,7 @@
 
             <div class="bg-gray-50 rounded-2xl p-5 mb-6 border border-gray-100">
                 <div class="mb-3">
-                    <p class="text-xs text-gray-500 uppercase tracking-wider">รหัสประจำตัวประชาชน</p>
+                    <p class="text-xs text-gray-500 uppercase tracking-wider">รหัสประจำตัว</p>
                     <p class="text-lg font-medium text-gray-800" id="resId">-</p>
                 </div>
                 <div class="mb-3">
@@ -113,6 +112,13 @@
         </div>
 
     </div>
+
+    <!-- Footer -->
+    <footer class="mt-8 text-center text-sm text-gray-800 space-y-1 drop-shadow-sm z-10">
+        <p class="font-semibold text-base">โรงเรียนศรีวารินทร์</p>
+        <p>สำนักงานเขตพื้นที่การศึกษามัธยมศึกษานราธิวาส</p>
+        <p class="text-xs mt-3 opacity-80">(\dev\) ครูอับดุลฮากิม อ๊ะหมะ | Abdulhakim.a@sriwarinschool.ac.th</p>
+    </footer>
 
     <script>
         // ==========================================
